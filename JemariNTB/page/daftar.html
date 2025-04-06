@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas PemWEB</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/daftar.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#">
+        <img
+          src="../img/Logo Jemari.png"
+          alt="Logo Bertani"
+          style="height: 50px; width: auto; max-width: 150px"
+        />
+      </a>
+      <div class="navbar-nav">
+        <a href="index.html" id="homeBtn">Beranda</a>
+        <a href="index.html" id="aboutBtn">Tentang Kami</a>
+        <a href="penjualan.html">Penjualan</a>
+        <a href="#">Daftar</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- hero section -->
+    <section class="hero">
+      <main class="content">
+    <!-- hero end -->
+
+  
+<!-- Register Section -->
+<div class="register">
+  <h2>Daftar Sekarang</h2>
+  <form id="register-form" action="/register" method="POST">
+    <input
+      type="text"
+      id="name"
+      placeholder="Nama Lengkap"
+      required
+      autocomplete="name"
+      aria-label="Nama Lengkap"
+    />
+    <input
+      type="email"
+      id="email"
+      placeholder="Email"
+      required
+      autocomplete="email"
+      aria-label="Email"
+    />
+    <input
+      type="text"
+      id="telp"
+      placeholder="+62 "
+      required
+      autocomplete="tel"
+      aria-label="Telepon"
+    />
+    <input
+      type="password"
+      id="password"
+      placeholder="Password"
+      required
+      aria-label="Password"
+    />
+    <input
+      type="password"
+      id="confirm-password"
+      placeholder="Konfirmasi Password"
+      required
+      aria-label="Konfirmasi Password"
+    />
+    <button type="submit" class="submit">Daftar</button>
+
+    <p>Sudah punya akun? <a href="/login">Masuk</a></p>
+  </form>
+</div>
+
+<!-- Pop-up Alert -->
+<div id="pop-up" class="pop-up">
+  <div class="pop-up-content">
+    <p>Selamat Anda Telah Tergabung Sebagai Mitra JemariNTB</p>
+    <button id="close-pop-up">Tutup</button>
+  </div>
+</div>
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
